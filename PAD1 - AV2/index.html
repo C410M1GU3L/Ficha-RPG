@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=number],input[type=text] {
+        border: 2px solid black;
+        height: 16pt;
+        border-radius: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 24pt;
+        }
+
+        input[type=text] {
+        width: 144pt;
+        }
+
+        label, body {
+        font-family: sans-serif;
+        font-size: 14pt;
+        color: black;
+        font-weight: bold;
+        }
+
+        input[disabled] {
+        background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Ficha de RPG
+    </h2>
+    <p>
+    <label>Nome:</label>
+    <input type="text" id="nome" />
+    <label>Nível:</label>
+    <input type="number" id="nivel" />
+    </p>
+    
+    <p>
+    <label>Força:</label>
+    <input type="number" id="forca" />
+    <label>Poder de Ataque:</label>
+    <input type="number" id="poder" disabled/>
+    </p>
+    
+    <p>
+    <label>Agilidade:</label>
+    <input type="number" id="agilidade" />
+    <label>Armadura:</label>
+    <input type="number" id="armadura" />
+    <label>Defesa:</label>
+    <input type="number" id="defesa" disabled/>
+        </p>
+
+    <label id="d4label"></label><br>
+    <label id="d6label"></label><br>
+    <label id="d8label"></label><br>
+    <label id="d10label"></label><br>
+    <label id="d12label"></label><br>
+    <label id="d20label"></label><br>
+    <label id="d100label"></label><br>
+    <label id="d1000label"></label><br>
+
+    <button type="button" id="d4Button">d4</button>
+    <button type="button" id="d6Button">d6</button>
+    <button type="button" id="d8Button">d8</button>
+    <button type="button" id="d10Button">d10</button>
+    <button type="button" id="d12Button">d12</button>
+    <button type="button" id="d20Button">d20</button>
+    <button type="button" id="d100Button">d100</button>
+    <button type="button" id="d1000Button">d1000</button>
+
+
+    <script src="meuscript.js"></script>
+</body>
+</html>
